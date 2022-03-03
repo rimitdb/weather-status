@@ -15,16 +15,19 @@
 
 <body>
     <div class="container">
-        <form class="col-md-6 m-auto py-5">
+        <form class="col-md-6 mx-auto mt-5 py-5">
             <div class="input-group mb-3">
-                <input id="search-box" type="text" class="form-control"
-                    placeholder="Enter a City Name for Weather Info...">
+                <input id="search-box" type="text" class="form-control" placeholder="Search By City Name....">
                 <div class="input-group-append">
                     <button onclick="searchCity()" id="search-button" type="button"
                         class="btn btn-danger">Search</button>
                 </div>
             </div>
         </form>
+        <div>
+            <p id="error-message" class="fs-3 text-center">Please enter a city name</p>
+            <p id="error-message2" class="fs-3 text-center">Please enter a valid city name</p>
+        </div>
         <div class="weather-status text-white text-center">
             <img id="icon-img" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
             <h1 id="city-name">City</h1>

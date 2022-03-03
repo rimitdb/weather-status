@@ -3,3 +3,6 @@ body {
     background-size: cover;
     height: 100vh;
 }
+#error-message, #error-message2{
+display: none;
+}
